@@ -1,12 +1,13 @@
-import flet as ft
-from controls import Calendar
 from datetime import datetime
+
+import flet as ft
+from flet_calendar_control import CalendarControl
 
 
 def main(page: ft.Page):
-    text = ft.Text("Calendar page")
+    text = ft.Text("CalendarControl page")
     page.add(text)
-    page.add(Calendar(datetime.now()))
+    page.add(CalendarControl(datetime.now()))
 
 
 ft.app(main)
